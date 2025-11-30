@@ -106,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml \
@@ -131,6 +130,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
@@ -142,6 +142,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.gps_scp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_scp.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
@@ -152,7 +153,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
-    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.se@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.se@1.0-service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc \
+    vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-iseeservice.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/mt6895-common/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
@@ -189,6 +195,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-mediatek \
     audio.r_submix.mediatek \
     consumerir.common \
+    gatekeeper.beanpod \
     gps.default \
     hwcomposer.mtk_common \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
@@ -200,14 +207,15 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
+    jcos_nq_client-v1 \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
     libMtkSpeechEnh \
     libNoFpsActor \
+    libTEECommon \
     lib_iir \
     lib_speech_enh \
-    libaachaptics \
     libaal_cust \
     libaal_key \
     libaal_mtk \
@@ -276,24 +284,32 @@ PRODUCT_PACKAGES += \
     libgralloctypes_mtk \
     libgwsdv2-ril \
     libgwsdv3-ril \
+    libgz_gp_client \
+    libgz_uree \
     libhdrvideo \
     libhfmanager \
     libhwm \
     libifcutils_mtk \
+    libimsg_log \
     libion_mtk \
     libion_ulit \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
     libladder \
+    libmfido_isee \
     libmipc \
     libmiresample \
     libmispowerop \
+    libmlipay_isee \
+    libmlipay_isee@1.1 \
     libmmagent \
     libmml \
     libmnetlink_v104 \
     libmp3dec_mtk \
     libmsbc_mtk \
+    libmt_isee \
+    libmt_isee@1.3 \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkares \
@@ -334,6 +350,7 @@ PRODUCT_PACKAGES += \
     libnvram_sec \
     libnxp_extamp_intf \
     libnxpsmartpaparser \
+    liboemcrypto \
     libpqframework \
     libratconfig \
     librilfusion \
@@ -344,8 +361,15 @@ PRODUCT_PACKAGES += \
     libspeechparser_vendor \
     libstorage_otp \
     libsysenv \
+    libteeclientjni_isee \
+    libteeclientjni_isee@1.1 \
+    libteei_daemon_vfs \
+    libthha \
+    libthhclient \
+    libtlcWidevineModularDrm \
     libtrm \
     libudf \
+    liburee_meta_drmkeyinstall \
     libvia-ril \
     libviagpsrpc \
     libviamipc-ril \
@@ -358,7 +382,10 @@ PRODUCT_PACKAGES += \
     libwifi-hal-mtk \
     libwpfa \
     libwvhidl \
+    libwvkeybox \
     libxlog \
+    ls_nq_client-v1 \
+    libwvdrmengine \
     arm.graphics-V1-ndk_platform \
     libDR \
     libaal_cust_func \
@@ -377,7 +404,8 @@ PRODUCT_PACKAGES += \
     libpq_prot \
     libpqparamparser \
     libpqpconfig \
-    vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform \
+    se_nq_extn_client-v1 \
+    secure_element-impl \
     vendor.mediatek.hardware.apuware.apusys@2.0 \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
@@ -422,26 +450,36 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.microtrust.hardware.soter@1.0 \
+    vendor.microtrust.hardware.thh@2.0 \
+    wechat.beanpod \
+    SoterService \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
+    android.hardware.security.keymint-service.beanpod.xml \
+    android.hardware.security.secureclock-service.beanpod.xml \
+    android.hardware.security.sharedsecret-service.beanpod.xml \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
+    manifest.microtrust.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_apuware_apusys.xml \
     manifest_apuware_hmp.xml \
     manifest_apuware_utils.xml \
     manifest_media_c2_V1_1_default.xml \
+    manifest_wechat.xml \
     vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml \
-    vendor.xiaomi.hardware.vibratorfeature.service.xml \
     ccci_mdinit \
     ccci_rpcd \
     chipinfo \
     conninfra_loader \
+    fidoca_isee \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
+    android.hardware.security.keymint@1.0-service.beanpod \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6895 \
     mtkfusionrild \
     tetheroffloadservice \
@@ -449,12 +487,17 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
-    vendor.xiaomi.hardware.vibratorfeature.service \
+    vendor.microtrust.hardware.se@1.0-service \
+    vendor.microtrust.hardware.soter@1.0-service \
+    vendor.microtrust.hardware.thh@2.0-service \
     vtservice_hidl \
+    mlipayd_isee@1.1 \
     mnld \
+    mtd_isee@1.3 \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
+    teei_daemon \
     wlan_assistant
 
 PRODUCT_PACKAGES += \
